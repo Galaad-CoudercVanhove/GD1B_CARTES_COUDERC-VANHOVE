@@ -5,7 +5,7 @@
 #include <iostream>
 
 Monstre::Monstre(){
-    _nom = "Monstre 1"
+    _nom = "Monstre 1";
     _pv = 20;
     _atk = 5;
     _epuisement = false;
@@ -24,9 +24,19 @@ int Monstre::attaque(){
     }
 }
 
+void Monstre::afficher(){
+    std::cout << "PV : " << _pv << std::endl;
+    std::cout << "Attaque : " << _atk << std::endl;
+    if(_epuisement = true){
+        std::cout << "Etat : Indisponible"<< std::endl;
+    } else {
+        std::cout << "Etat : Disponible"<< std::endl;
+    }
+}
+
 void Monstre::finTour(){
     _epuisement = false;
-    return 0;
+    afficher();
 }
 
 #endif
