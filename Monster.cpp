@@ -24,4 +24,9 @@ int Monstre::attaque(){
     }
 }
 
+void Monstre::finTour(){
+    _epuisement = false;
+    return 0;
+}
+
 #endif
