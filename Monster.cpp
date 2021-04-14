@@ -25,6 +25,7 @@ int Monstre::attaque(){
 }
 
 void Monstre::afficher(){
+    std::cout << "Nom : " << _nom << std::endl;
     std::cout << "PV : " << _pv << std::endl;
     std::cout << "Attaque : " << _atk << std::endl;
     if(_epuisement = true){
